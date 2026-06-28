@@ -1,5 +1,13 @@
-import { redirect } from "next/navigation";
-
 export default function Home() {
-  redirect("/mirror/index.html");
+  return (
+    <iframe
+      src="/mirror/index.html"
+      style={{
+        width: "100%",
+        height: "100vh",
+        border: "0",
+        display: "block",
+      }}
+    />
+  );
 }
